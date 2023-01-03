@@ -1,1 +1,31 @@
-.service:hover {}
+.frame {
+    position: relative;
+    overflow: hidden;
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    display: none;
+    /* border: 5px solid blue; */
+    /* margin-top: 80px; */
+    /* margin-left: 80px; */
+
+}
+
+.proimage {
+    overflow: hidden;
+}
+
+.frame:hover .info {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(52, 38, 50, 0.364);
+}
+
+.frame:hover .proimage {
+    transform: scale(1.2);
+    transition: ease-in-out .3s;
+}

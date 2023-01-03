@@ -1,11 +1,22 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Service.css'
 
 const Service = ({ service }) => {
-    const { img, name, price } = service;
+    const { id, img, name, price } = service;
+    const navigate = useNavigate();
+    const productDetails = (id) => {
+        navigate(`/product/${id}`);
+    }
     return (
-        <div className='text-center service'>
-            <img src={img} className="w-full lg:h-96  " alt="" />
+        <div>
+            <div className='text-center frame'>
+                <img src={img} className="w-full h-48 lg:h-96 proimage" alt="" />
+
+                <div className='info w-full h-48 lg:h-96'>
+                    <button onClick={() => productDetails(id)} className='btn btn-xs sm:btn-sm md:btn-md lg:btn-md bg-gray-200 border-none text-black hover:text-white hover:font-bold'>Buy Now</button>
+                </div>
+            </div>
             <div className='grid grid-cols-2'>
                 <div className='flex justify-start mt-2'>
                     <div>

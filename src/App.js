@@ -9,6 +9,7 @@ import Login from './components/Pages/SignIn/Login';
 import SignUp from './components/Pages/SignIn/SignUp';
 import ContuctUs from './components/Pages/Home/ContuctUs';
 import NotFound from './components/Pages/NotFound/NotFound';
+import ProductDetails from './components/Pages/ProductDetails/ProductDetails';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ https://i.ibb.co/Cb7PBQ3/furniture-35.jpg
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/contuct' element={<ContuctUs></ContuctUs>}></Route>
+        <Route path='/product/:ID' element={<ProductDetails></ProductDetails>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
