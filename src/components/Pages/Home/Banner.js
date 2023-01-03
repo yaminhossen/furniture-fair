@@ -1,8 +1,4 @@
 import React from 'react';
-import banner1 from '../../../images/banner/banner1.png';
-import banner2 from '../../../images/banner/banner2.jpg';
-import banner3 from '../../../images/banner/banner3.jpg';
-import banner4 from '../../../images/banner/fBanner11.jpg'
 import b1 from '../../../images/banner/b1.png'
 import './Banner.css'
 
@@ -31,28 +27,7 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className='grid mb-24  w-3/4 mx-auto '>
-           
-            <div className='banners  w-full'>
-                <div className="banners duration-75 transition-transform  rounded carousel w-full ">
-                    <div id="slide1" className="carousel-item relative w-full ">
-                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <div className='ml-12 grid grid-cols-2 '>
-                                <div className='p-8 rounded rounded-xl  '>
-                                    <h2 className='text-5xl font-bold mb-4'><span className='text-amber-400  '>Home</span> <br />Comforrt</h2>
-                                    <h3>THsissj Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit..</h3>
-                                    <button className='btn-warning p-3 mt-4 rounded-xl'>More Info..</button>
-                                </div>
-                            </div>
-                            <div>
-                                <img src={b1} alt="" />
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
-        </div > */}
         </div >
 
     );
