@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import GoogleLogin from './GoogleLogin';
+import Loading from '../Shared/Loading';
 
 const SignUp = () => {
 
@@ -17,6 +18,9 @@ const SignUp = () => {
 
     if (user) {
         navigate('/');
+    }
+    if (loading) {
+        return <Loading></Loading>
     }
 
     const handleSignUp = event => {
