@@ -1,0 +1,25 @@
+.twomage {
+    height: 130px;
+}
+
+.sun {
+    width: 300px;
+}
+
+.tan {
+    width: 200px;
+    transition: width 2s ease;
+
+}
+
+/* .yyyy:hover .tan {
+    width: 300px;
+} */
+
+/* .four {
+    height: 339px;
+}
+
+.one {
+    height: 457px;
+} */

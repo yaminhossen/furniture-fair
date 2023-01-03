@@ -1,0 +1,26 @@
+.banners {
+    height: 550px;
+
+}
+
+.dontoffer {
+    background-color: rgba(255, 192, 203, 0.353);
+}
+
+.offer img {
+    height: 800px;
+    width: 600px;
+    margin-top: -130px;
+}
+
+.contuct {
+    background-image: url("https://i.ibb.co/Stz5NnV/kobu-agency-o8-Zes-B0-MLFo-unsplash-1.jpg");
+}
+
+.coninfo {
+    margin-left: -150px;
+}
+
+.banners {
+    height: 500px;
+}
