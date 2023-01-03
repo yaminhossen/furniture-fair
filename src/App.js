@@ -1,23 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import Footer from './components/Pages/Shared/Footer';
+import Header from './components/Pages/Shared/Header';
+import { Button, ButtonGroup, ButtonToolbar } from 'react-bootstrap';
+import Home from './components/Pages/Home/Home';
+import { Route, Routes } from 'react-router-dom';
+import Login from './components/Pages/SignIn/Login';
+import SignUp from './components/Pages/SignIn/SignUp';
+import ContuctUs from './components/Pages/Home/ContuctUs';
+import NotFound from './components/Pages/NotFound/NotFound';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header></Header>
+      {/* <h2>
+      https://i.ibb.co/yBDdwjX/furniture-14.jpg
+https://i.ibb.co/zS8kGH0/furniture-16.jpg
+https://i.ibb.co/Vt9WzVp/furniture-18.jpg
+https://i.ibb.co/bKmcBc3/furniture-19.jpg
+https://i.ibb.co/0GZnxcw/furniture-20.jpg
+https://i.ibb.co/s9w7yXv/furniture-21.jpg
+https://i.ibb.co/zZNZvCY/furniture-29.jpg
+https://i.ibb.co/RBv1Ymr/furniture-33.jpg
+https://i.ibb.co/Cb7PBQ3/furniture-35.jpg
+      </h2> */}
+      <Routes>
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='/contuct' element={<ContuctUs></ContuctUs>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
+      </Routes>
+      <Footer></Footer>
     </div>
   );
 }

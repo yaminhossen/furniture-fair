@@ -29,7 +29,7 @@ const Header = () => {
                         <li><Link to='/blog'>Blog</Link></li>
                         <li><Link to='/contuct'>ContuctUs</Link></li>
 
-                        <li><Link to='/login'>Logun</Link></li>
+                        <li><Link to='/login'>Login</Link></li>
 
                     </ul>
                 </div>
