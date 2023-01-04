@@ -11,6 +11,7 @@ import ContuctUs from './components/Pages/Home/ContuctUs';
 import NotFound from './components/Pages/NotFound/NotFound';
 import ProductDetails from './components/Pages/ProductDetails/ProductDetails';
 import CheckOut from './components/Pages/CheckOut/CheckOut';
+import RequirAuth from './components/Pages/RequirAuth/RequirAuth';
 
 function App() {
   return (
@@ -34,7 +35,11 @@ https://i.ibb.co/Cb7PBQ3/furniture-35.jpg
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/contuct' element={<ContuctUs></ContuctUs>}></Route>
         <Route path='/product/:ID' element={<ProductDetails></ProductDetails>}></Route>
-        <Route path='/checkout' element={<CheckOut></CheckOut>}></Route>
+        <Route path='/checkout' element={
+          <RequirAuth>
+            <CheckOut></CheckOut>
+          </RequirAuth>
+        }></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
