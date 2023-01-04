@@ -1,10 +1,14 @@
 import React from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../Shared/Loading';
 import GoogleLogin from './GoogleLogin';
 
 const Login = () => {
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
     let signInError;
     const [
         signInWithEmailAndPassword,
@@ -15,6 +19,12 @@ const Login = () => {
 
     if (error) {
         signInError = <p className='text-red-400'>{error.message}</p>
+    }
+    if (loading) {
+        return <Loading></Loading>
+    }
+    if (user) {
+        navigate(from, { replace: true });
     }
 
     const handleSignIn = event => {

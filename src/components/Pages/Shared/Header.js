@@ -1,9 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import logo from '../../../images/logo/cameralogo.png';
+import auth from '../../../firebase.init';
 import './Header.css';
+import { signOut } from 'firebase/auth';
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+    const handleSignOut = () => {
+        signOut(auth);
+    }
     return (
         <div className='bg-gray-300'>
             <div className="navbar  w-3/4 mx-auto py-6 ">
@@ -17,7 +24,12 @@ const Header = () => {
                             <li><Link to='/blog'>Blog</Link></li>
                             <li><Link to='/contuct'>ContuctUs</Link></li>
 
-                            <li><Link to='/login'>Login</Link></li>
+                            {
+                                user ?
+                                    <button onClick={handleSignOut}>SignOut</button>
+                                    :
+                                    <li><Link to='/login'>Login</Link></li>
+                            }
 
                         </ul>
                     </div>
@@ -29,7 +41,12 @@ const Header = () => {
                         <li><Link to='/blog'>Blog</Link></li>
                         <li><Link to='/contuct'>ContuctUs</Link></li>
 
-                        <li><Link to='/login'>Login</Link></li>
+                        {
+                            user ?
+                                <button onClick={handleSignOut}>SignOut</button>
+                                :
+                                <li><Link to='/login'>Login</Link></li>
+                        }
 
                     </ul>
                 </div>
