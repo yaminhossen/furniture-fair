@@ -1,6 +1,6 @@
 import React from 'react';
 import './Offer.css'
-import './Service.css'
+import './Product.css'
 import f6 from '../../../images/furniture/furniture (6).jpg';
 import f12 from '../../../images/furniture/furniture (12).jpg';
 import f17 from '../../../images/furniture/furniture (17).jpg';

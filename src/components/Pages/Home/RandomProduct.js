@@ -8,24 +8,19 @@ import f12 from '../../../images/furniture/furniture (12).jpg';
 import f13 from '../../../images/furniture/furniture (13).jpg';
 import f14 from '../../../images/furniture/furniture (14).jpg';
 import f15 from '../../../images/furniture/furniture (15).jpg';
-import f16 from '../../../images/furniture/furniture (16).jpg';
-import f17 from '../../../images/furniture/furniture (17).jpg';
-import f18 from '../../../images/furniture/furniture (18).jpg';
-import f19 from '../../../images/furniture/furniture (19).jpg';
 import f2 from '../../../images/furniture/furniture (3).jpg';
 import f3 from '../../../images/furniture/furniture (4).jpg';
 import f4 from '../../../images/furniture/furniture (5).jpg';
 import f5 from '../../../images/furniture/furniture (6).jpg';
 import f6 from '../../../images/furniture/furniture (7).jpg';
-import f7 from '../../../images/furniture/furniture (8).jpg';
 import f8 from '../../../images/furniture/furniture (9).jpg';
 
 
-const RandomService = () => {
+const RandomProduct = () => {
 
     return (
         <div className='w-3/4 yyyy my-24 mx-auto'>
-            <h2 className='text-center my-12 text-xl font-bold text-pink-400'>This is random servcie</h2>
+            <h2 className='text-center my-12 text-xl font-bold text-gray-400'>This is random products</h2>
 
             <div className="flex gap-2">
                 <div className='w-2/6 flex flex-col gap-2 '>
@@ -61,4 +56,4 @@ const RandomService = () => {
     );
 };
 
-export default RandomService;
+export default RandomProduct;
