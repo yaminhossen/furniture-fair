@@ -8,7 +8,7 @@ const Offer = () => {
     const [minute, setMinute] = useState(0);
     const [hour, setHour] = useState(0);
     const [day, setDay] = useState(0);
-    const countDownDate = new Date("Jan 20, 2023 15:37:25").getTime();
+    const countDownDate = new Date("Feb 20, 2022 15:37:25").getTime();
 
     // Update the count down every 1 second
     const x = setInterval(function () {

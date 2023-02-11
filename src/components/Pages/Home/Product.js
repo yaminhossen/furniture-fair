@@ -2,8 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Service.css'
 
-const Service = ({ service }) => {
-    const { id, img, name, price } = service;
+const Product = ({ product }) => {
+    const { id, img, name, price } = product;
     const navigate = useNavigate();
     const productDetails = (id) => {
         navigate(`/product/${id}`);
@@ -32,4 +32,4 @@ const Service = ({ service }) => {
     );
 };
 
-export default Service;
+export default Product;

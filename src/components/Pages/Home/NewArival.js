@@ -1,10 +1,6 @@
 import React from 'react';
 import './Offer.css'
-import f1 from '../../../images/furniture/furniture (1).jpg';
-import f2 from '../../../images/furniture/furniture (2).jpg';
-import f3 from '../../../images/furniture/furniture (3).jpg';
-import f4 from '../../../images/furniture/furniture (4).jpg';
-import f5 from '../../../images/furniture/furniture (5).jpg';
+import './Service.css'
 import f6 from '../../../images/furniture/furniture (6).jpg';
 import f12 from '../../../images/furniture/furniture (12).jpg';
 import f17 from '../../../images/furniture/furniture (17).jpg';
@@ -21,21 +17,35 @@ const NewArival = () => {
 
 
 
-                    <div className='w-1/3'>
-                        <div className='w-full  '><img className='image1 w-full' src={f17} alt="" /></div>
+                    <div className='w-1/3 frame'>
+                        <div className='w-full  '><img className='image1 w-full proimage' src={f17} alt="" /></div>
+                        <div className='info  w-full h-full  '><button className='btn btn-xs sm:btn-sm md:btn-md lg:btn-md bg-gray-200 border-none text-black hover:text-white hover:font-bold'>Buy Now</button></div>
 
                     </div>
                     <div className='w-1/3  '>
-                        <div className='w-full gap-4  '><img className='image2 w-full' src={f6} alt="" /></div>
+                        <div className='frame'>
+                            <div className='w-full gap-4  '><img className='image2 w-full proimage' src={f6} alt="" /></div>
+                            <div className='info  w-full h-full '><button className='btn btn-xs sm:btn-sm md:btn-md lg:btn-md bg-gray-200 border-none text-black hover:text-white hover:font-bold'>Buy Now</button></div>
+                        </div>
                         <div className=' flex gap- mt-4 w-full'>
-                            <div className='w-full'><img src={f26} className='w-full image2' alt="" /></div>
+                            <div className='frame'>
+                                <div className='w-full'><img src={f26} className='w-full image2 proimage' alt="" /></div>
+                                <div className='info  w-full h-full '><button className='btn btn-xs sm:btn-sm md:btn-md lg:btn-md bg-gray-200 border-none text-black hover:text-white hover:font-bold'>Buy Now</button></div>
+                            </div>
                         </div>
                     </div>
                     <div className='w-1/3'>
-                        <div className=' w-full'><img className='image3 w-full' src={f12} alt="" /></div>
+                        <div className="frame"><div className=' w-full'><img className='image3 w-full proimage' src={f12} alt="" /></div>
+                            <div className='info  w-full h-full '><button className='btn btn-xs sm:btn-sm md:btn-md lg:btn-md bg-gray-200 border-none text-black hover:text-white hover:font-bold'>Buy Now</button></div>
+                        </div>
                         <div className=' flex gap-4  mt-4 w-'>
-                            <div className='w-ful'><img src={f23} className='image4 w-full' alt="" /></div>
-                            <div className='w-full'><img src={f27} className='image4 w-full' alt="" /></div>
+                            <div className="frame">
+                                <div className='w-ful'><img src={f23} className='image4 w-full proimage' alt="" />
+                                    <div className='info  w-full h-full '><button className='btn btn-xs sm:btn-sm md:btn-md lg:btn-md bg-gray-200 border-none text-black hover:text-white hover:font-bold'>Buy Now</button></div></div>
+                            </div>
+                            <div className="frame"><div className='w-full'><img src={f27} className='image4 w-full proimage' alt="" />
+                                <div className='info  w-full h-full '><button className='btn btn-xs sm:btn-sm md:btn-md lg:btn-md bg-gray-200 border-none text-black hover:text-white hover:font-bold'>Buy Now</button></div></div>
+                            </div>
                         </div>
                     </div>
 

@@ -7,14 +7,15 @@ import NewArival from './NewArival';
 import Offer from './Offer';
 import ProfitState from './ProfitState';
 import RandomService from './RandomService';
-import Services from './Services';
+import Products from './Products';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
             <NewArival></NewArival>
-            <Services></Services>
+            {/* <Services></Services> */}
+            <Products></Products>
             <Offer></Offer>
             <RandomService></RandomService>
             <ProfitState></ProfitState>

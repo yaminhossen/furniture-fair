@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Service from './Service';
+import Product from './Product';
 
-const Services = () => {
-    const [services, setServices] = useState([]);
+const Products = () => {
+    const [products, setProducts] = useState([]);
     useEffect(() => {
         fetch('services.json')
             .then(res => res.json())
-            .then(data => setServices(data));
+            .then(data => setProducts(data));
     }, [])
     return (
         <div className='w-3/4 mx-auto mb-24'>
@@ -17,17 +17,17 @@ const Services = () => {
             </div>
             <div className='grid grid-cols-4 gap-4'>
                 {
-                    services.slice().map(service => <Service
-                        key={service.id}
-                        service={service}
-                    ></Service>)
+                    products.slice().map(product => <Product
+                        key={product.id}
+                        product={product}
+                    ></Product>)
                 }
             </div>
             <div className='flex justify-end my-12 font-bold text-xl '>
-                <Link className='hover:bg-pink-400 p-2 hover:text-white rounded pr-4' to="/home">See all services ...</Link>
+                <Link className='hover:bg-pink-400 p-2 hover:text-white rounded pr-4' to="/home">See all products ...</Link>
             </div>
         </div>
     );
 };
 
-export default Services;
+export default Products;
