@@ -8,6 +8,7 @@ import Offer from './Offer';
 import ProfitState from './ProfitState';
 import RandomService from './RandomService';
 import Products from './Products';
+import Reviews from './Reviews';
 
 const Home = () => {
     return (
@@ -20,6 +21,7 @@ const Home = () => {
             <RandomService></RandomService>
             <ProfitState></ProfitState>
             <DontMiss></DontMiss>
+            <Reviews></Reviews>
             <ContuctUs></ContuctUs>
         </div>
     );

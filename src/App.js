@@ -12,6 +12,7 @@ import NotFound from './components/Pages/NotFound/NotFound';
 import ProductDetails from './components/Pages/ProductDetails/ProductDetails';
 import CheckOut from './components/Pages/CheckOut/CheckOut';
 import RequirAuth from './components/Pages/RequirAuth/RequirAuth';
+import Blog from './components/Pages/Blog/Blog';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ https://i.ibb.co/Cb7PBQ3/furniture-35.jpg
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/contuct' element={<ContuctUs></ContuctUs>}></Route>
