@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import logo from '../../../images/logo/cameralogo.png';
+import logo from '../../../images/logo/furniture-logo.png';
 import auth from '../../../firebase.init';
 import './Header.css';
 import { signOut } from 'firebase/auth';
@@ -33,7 +33,7 @@ const Header = () => {
 
                         </ul>
                     </div>
-                    <Link to="/" className="btn btn-ghost normal-case text-xl"><img width="50px" src={logo} alt="" /></Link>
+                    <Link to="/" className=""><img width="100px " src={logo} alt="" /></Link>
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
