@@ -6,7 +6,8 @@ const Product = ({ product }) => {
     const { id, img, name, price } = product;
     const navigate = useNavigate();
     const productDetails = (id) => {
-        navigate(`/product/${id}`);
+        // navigate(`/product/${id}`);
+        navigate('/dashboard')
     }
     return (
         <div>
@@ -14,7 +15,11 @@ const Product = ({ product }) => {
                 <img src={img} className="w-full h-48 lg:h-96 proimage" alt="" />
 
                 <div className='info w-full h-48 lg:h-96'>
-                    <button onClick={() => productDetails(id)} className='btn btn-xs sm:btn-sm md:btn-md lg:btn-md bg-gray-200 border-none text-black hover:text-white hover:font-bold'>Buy Now</button>
+                    <div className=''>
+                        <button onClick={() => productDetails(id)} className='btn btn-xs sm:btn-sm md:btn-md lg:btn-md bg-gray-200 border-none text-black hover:text-white hover:font-bold'>Buy Now</button>
+                        <br />
+                        <button className='btn btn-xs sm:btn-sm md:btn-md lg:btn-md bg-gray-200 border-none text-black hover:text-white hover:font-bold mt-2'>Add to cart</button>
+                    </div>
                 </div>
             </div>
             <div className='grid grid-cols-2'>

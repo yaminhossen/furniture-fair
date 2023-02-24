@@ -13,10 +13,10 @@ const Products = () => {
     return (
         <div className='w-3/4 mx-auto mb-24'>
             <div className='text-center my-12'>
-                <h2 className='font-bold text-3xl text-stone-500'>Our Products</h2>
-                <h3 className='font-bold text-stone-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, itaque?</h3>
+                <h2 className='font-bold text-3xl text-stone-500'>Best Selling Products</h2>
+                <h3 className='font-bold text-stone-400'>Here have all unique design product.Which have resonable price.You can try out. </h3>
             </div>
-            <div className='grid grid-cols-4 gap-4'>
+            <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
                 {
                     products.slice(0, 8).map(product => <Product
                         key={product.id}

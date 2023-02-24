@@ -62,8 +62,8 @@ const Reviews = () => {
                         </div>
 
                     </div>
-                    <div className="card md:w-5/6 sm:w-5/6 w-4/6">
-                        <figure className="px-10 pt-10 avatar">
+                    <div className="card mx-10 md:w-5/6 lg:w-4/6">
+                        <figure className=" pt-10 avatar">
                             <div className="avatar online">
                                 <div className="w-32 rounded-full">
                                     <img src={pic} alt='' />
@@ -71,8 +71,8 @@ const Reviews = () => {
                             </div>
                         </figure>
                         <div className="card-body items-center text-center">
-                            <p className='h-24 font-bold text-xl text-gray-500'>{second[seconds].des}</p>
-                            <h2 className="card-title font-bold text-2xl text-gray-700">Name: {second[seconds].name}</h2>
+                            <p className='w-full font-bold text-xl text-gray-500'>{second[seconds].des}</p>
+                            <h2 className="card-title font-bold text-2xl text-gray-700 mt-12">Name: {second[seconds].name}</h2>
 
                             <div className=" mb-">
                                 <div className="rating">

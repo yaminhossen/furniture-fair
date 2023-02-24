@@ -11,7 +11,7 @@ const DontMiss = () => {
                         <div className='flex offer  justify-center hidden lg:block w-2/4'>
                             <img className='' src={offer} alt='' />
                         </div>
-                        <div className='flex w-2/4 justify-center ml-12'>
+                        <div className='flex w-2/4 justify-center lg:ml-12'>
                             <div>
                                 <h1 className="text-5xl font-bold">Don't miss out on special offers</h1>
                                 <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>

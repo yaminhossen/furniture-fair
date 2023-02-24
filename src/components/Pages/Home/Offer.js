@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 import './Offer.css'
 import ff from '../../../images/furniture/fur.png'
 
@@ -8,7 +9,7 @@ const Offer = () => {
     const [minute, setMinute] = useState(0);
     const [hour, setHour] = useState(0);
     const [day, setDay] = useState(0);
-    const countDownDate = new Date("Feb 20, 2022 15:37:25").getTime();
+    const countDownDate = new Date("March 25, 2023 15:37:25").getTime();
 
     // Update the count down every 1 second
     const x = setInterval(function () {
@@ -47,10 +48,10 @@ const Offer = () => {
     return (
 
         <div className='bg-stone-200 w-3/4 rounded-xl mx-auto flex'>
-            <div className='3/5 flex  mx-auto items-center '>
+            <div className=' flex  mx-auto items-center hidden md:block lg:block '>
                 <img className='offerchair' src={ff} alt="" />
             </div>
-            <div className="divider divider-horizontal py-12  lg:py-24 "></div>
+            <div className="divider divider-horizontal py-12 mr-12 lg:mr-0  lg:py-24 "></div>
             <div className='w-3/6 p-6 '>
                 <div className='flex justify-center'>
                     <div className='flex gap-4'>
@@ -93,7 +94,7 @@ const Offer = () => {
                     </div>
                 </div>
                 <div className='flex justify-center mt-4'>
-                    <button className='btn'>Shop now</button>
+                    <Link to="/dashboard" className='btn'>Shop now</Link>
                 </div>
 
             </div>

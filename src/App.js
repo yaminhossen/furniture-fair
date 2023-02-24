@@ -14,11 +14,14 @@ import CheckOut from './components/Pages/CheckOut/CheckOut';
 import RequirAuth from './components/Pages/RequirAuth/RequirAuth';
 import Blog from './components/Pages/Blog/Blog';
 import AllProduct from './components/Pages/Home/AllProduct';
+import Dashboard from './components/Pages/Dashboard/Dashboard';
+import ScrollToTop from './components/Pages/Home/ScrollToTop';
 
 function App() {
   return (
     <div>
       <Header></Header>
+      <ScrollToTop />
       {/* <h2>
       https://i.ibb.co/yBDdwjX/furniture-14.jpg
 https://i.ibb.co/zS8kGH0/furniture-16.jpg
@@ -42,6 +45,11 @@ https://i.ibb.co/Cb7PBQ3/furniture-35.jpg
         <Route path='/checkout' element={
           <RequirAuth>
             <CheckOut></CheckOut>
+          </RequirAuth>
+        }></Route>
+        <Route path='/dashboard' element={
+          <RequirAuth>
+            <Dashboard></Dashboard>
           </RequirAuth>
         }></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>

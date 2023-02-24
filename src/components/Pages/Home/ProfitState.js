@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProfitState = () => {
     return (
-        <div className='b-orange-100 px-12 mb-32'>
+        <div className='b-orange-100 px-12 lg:mb-32'>
             <div className='pb-14 pt-8   mx-auto'>
                 <div className="w-full stats shadow">
 
